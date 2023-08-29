@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: poppins, sans-serif;
+}
+:root{
+    --background-color: #16171B;
+    --text-color: #ffffff;
+    --second-text-color: #11BBE9;
+}
+html{
+    font-size: 100%;
+    overflow: hidden;
+}
+body{
+    background: var(--background-color);
+    color: var(--text-color);
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5px 9%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:100;
+}
+.logo{
+    font-size: 2rem;
+    color: var(--second-text-color);
+    font-weight: 600;
+}
+#navBar a{
+    font-size: 1.7rem;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-left: 1rem;
+    transition: .3s;
+
+}
+#navBar a:hover,
+    #navBar a.active{
+        color: var(--second-text-color);
+    }
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+.home{
+    display: flex;
+    align-items: center;
+    padding: 9%;
+}
+.home-content{
+    max-width: 60rem;
+}
+.home-content h1{
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 0.9;
+}
+
+
+
