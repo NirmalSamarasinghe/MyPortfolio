@@ -1,36 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
 
-body{
+body {
     overflow-x: hidden;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: poppins, sans-serif;
+    font-family: 'Poppins', sans-serif; /* 'poppins' should be enclosed in quotes */
 }
-:root{
+
+:root {
     --background-color: #16171B;
     --text-color: #ffffff;
     --second-text-color: #11BBE9;
-    --third-text-color:#FEB700;
+    --third-text-color: #FEB700;
 }
-html{
+
+html {
     font-size: 100%;
-    /*overflow: hidden;*/
 }
-body{
+
+body {
     background: var(--background-color);
     color: var(--text-color);
 }
-.header{
+
+.header {
     position: fixed;
-    /*top: 0;*/
-    /*left: 0;*/
     width: 100%;
     height: 60px;
     padding: 1.5px 9%;
@@ -38,46 +39,51 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index:100;
+    z-index: 100;
 }
-.logo{
+
+.logo {
     font-size: 2rem;
     color: var(--second-text-color);
     font-weight: 600;
 }
-#navBar a{
+
+#navBar a {
     font-size: 1.7rem;
     color: var(--text-color);
     font-weight: 500;
     margin-left: 1rem;
-    /*font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;*/
     transition: .3s;
-    text-decoration: none black;
-
+    text-decoration: none; /* You need to specify 'text-decoration' property value */
 }
+
 #navBar a:hover,
-    #navBar a.active{
-        color: var(--second-text-color);
-    }
-section{
+#navBar a.active {
+    color: var(--second-text-color);
+}
+
+section {
     min-height: 100vh;
     padding: 10rem 9% 2rem;
 }
-.home{
+
+.home {
     display: flex;
     align-items: center;
     padding: 9%;
 }
-.home-content{
-   max-width: 40rem;
 
+.home-content {
+    max-width: 40rem;
 }
-.home-content h1{
+
+.home-content h1 {
     font-size: 3rem;
     font-weight: 900;
     line-height: 0.9;
 }
-.home-content .text_animation{
+
+.home-content .text_animation {
     position: relative;
     font-weight: 1000;
     color: transparent;
@@ -85,21 +91,24 @@ section{
     -webkit-text-stroke: 1px var(--third-text-color);
     margin: 2rem;
 }
-.home-content p{
+
+.home-content p {
     position: relative;
     bottom: 10px;
     left: 10px;
     font-size: 1.6rem;
     margin: 1rem;
 }
-.btn-box{
+
+.btn-box {
     position: relative;
     display: flex;
     justify-content: space-between;
     width: 35rem;
     height: 6rem;
 }
-.btn-box .btn{
+
+.btn-box .btn {
     position: relative;
     display: inline-flex;
     justify-content: center;
@@ -107,17 +116,17 @@ section{
     width: 126px;
     height: 46px;
     border: 2px solid var(--second-text-color);
-    border-radius:8px;
-
+    border-radius: 8px;
     font-size: 23px;
     font-weight: 600;
     letter-spacing: .1rem;
-    color: #11bbe9;
+    color: #11bbe9; /* Should be 'var(--second-text-color)' */
     z-index: 1;
     overflow: hidden;
     transition: .4s;
 }
-.btn-box .btn::before{
+
+.btn-box .btn::before {
     content: " ";
     position: absolute;
     top: 0;
@@ -128,18 +137,21 @@ section{
     z-index: -1;
     transition: .3s;
 }
-.btn-box .btn:nth-child(2){
+
+.btn-box .btn:nth-child(2) {
     background: transparent;
     color: var(--second-text-color);
 }
-.btn-box.btn:nth-child(2)::before{
-    background:var(--second-text-color);
 
+.btn-box .btn:nth-child(2)::before {
+    background: var(--second-text-color);
 }
-.btn-box .btn:hover::before{
+
+.btn-box .btn:hover::before {
     width: 100%;
 }
-.image{
+
+.image {
     position: absolute;
     width: 900px;
     top: 10px;
@@ -147,49 +159,54 @@ section{
     display: flex;
     justify-content: space-between;
 }
-.socialImages{
+
+.socialImages {
     position: absolute;
-    /*display: flex;*/
     right: 70px;
     left: 100px;
-    top: 500px;
+    top: 600px;
     margin: 0;
 }
-.about{
+
+.about {
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     flex-direction: column;
-    gap: 10px;
-    /*background: ;*/
-    padding-bottom: 900px;
+    padding-bottom: 100px;
 }
-.heading{
+
+.heading {
+    position: relative;
     font-size: 65px;
-    margin-bottom:5rem;
+    margin-bottom: 2rem;
     text-align: center;
+    bottom: 90px;
 }
-span{
+
+span {
     position: relative;
     left: 10px;
     color: #FEB700;
 }
-.aboutImage{
+
+.aboutImage {
     position: relative;
-    width: 15rem;
-    height: 15rem;
-    border-radius: 50%;
+    width: 17rem;
+    height: 17rem;
+    border-radius: 50%; /* Change '55%' to '50%' */
     display: flex;
     justify-content: center;
     align-items: center;
-    bottom: 30px;
+    bottom: 70px;
 }
 
-.aboutImage img{
+.aboutImage img {
     width: 85%;
     border-radius: 50%;
-    border: 2px solid var(--second-text-color);
+    border: 6px solid var(--second-text-color);
 }
+
 .spin {
     position: absolute;
     top: 50%;
@@ -200,79 +217,69 @@ span{
     border-radius: 50%;
     border-top: 2px solid var(--background-color);
     border-bottom: 2px solid var(--background-color);
-    border-left:2px solid var(--second-text-color);
-    border-right:2px solid var(--second-text-color);
+    border-left: 5px solid var(--second-text-color);
+    border-right: 5px solid var(--second-text-color);
 }
-.about_Content{
+
+.about_Content {
     text-align: center;
+    position: relative;
+    bottom: 50px;
 }
-.about_Content>h3{
+
+.about_Content > h3 {
     font-size: 30px;
     color: var(--third-text-color);
 }
-.about_Content p{
+
+.about_Content p {
     display: inline-block;
     margin: 2rem 0 3rem;
 }
-#eligibility{
+
+#eduName{
     position: relative;
     font-size: 65px;
-    bottom: 860px;
-    left: 475px;
+    margin-bottom: 2rem;
+    text-align: center;
+    bottom: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 300px;
 }
-
-
-.first_box{
+#box{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.eduBox{
     position: relative;
-    bottom: 800px;
-    width: 350px;
-    height: 400px;
-    display: inline-block;
-    left: 100px;
-    border-radius: 29px;
-    background: #212229;
-    box-shadow: inset 5px 5px 10px #17171c,
-    inset -5px -5px 10px #2b2d36;
+    width: 230px;
+    height: 350px;
+    border: 5px solid #FEB700 ;
+    border-radius: 20px 20px 20px 20px;
+    margin: 10px;
+    left: 20px;
+    padding: 30px;
+    bottom: 350px;
 }
 
-.second_box{
+#skill{
     position: relative;
-    bottom: 800px;
-    width: 350px;
-    height: 400px;
-    display: inline-block;
-    left: 142px;
-    border-radius: 29px;
-    background: #212229;
-    box-shadow: inset 5px 5px 10px #17171c,
-    inset -5px -5px 10px #2b2d36;
-}
-
-.third_box{
-    position: relative;
-    bottom: 800px;
-    width: 350px;
-    height: 400px;
-    display: inline-block;
-    left: 179px;
-    border-radius: 29px;
-    background: #212229;
-    box-shadow: inset 5px 5px 10px #17171c,
-    inset -5px -5px 10px #2b2d36;
-}
-
-/*section>p{
-    position: absolute;
-    font-size: 25px;
-    text-align: left;
+    font-size: 65px;
+    margin-bottom: 2rem;
+    text-align: center;
+    bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 300px;
 
 }
-#eligi:first-child{
-    position: relative;
-    bottom: 200px;
-
-}*/
-
-
-
-
