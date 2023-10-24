@@ -269,17 +269,73 @@ span {
     padding: 30px;
     bottom: 350px;
 }
-
-#skill{
+#skillName{
     position: relative;
     font-size: 65px;
     margin-bottom: 2rem;
     text-align: center;
-    bottom: 100px;
+    bottom: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 500px;
+}
+#icon{
+    position: relative;
+    align-content: space-between;
+    justify-content: center;
+    bottom: 550px;
+}
+#icon>img{
+    position: relative;
+    margin: 40px;
+    padding: 5px;
+}
+
+
+#expName{
+    position: relative;
+    font-size: 65px;
+    margin-bottom:2rem;
+    text-align: center;
+    bottom: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-bottom: 300px;
+    /*padding: 200px;*/
+}
 
+#projectName{
+    position: relative;
+    font-size: 65px;
+    margin-bottom: 2rem;
+    text-align: center;
+    bottom: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+#projectBox{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.proBox{
+    position: relative;
+    width: 500px;
+    height: 200px;
+    background: #480101;
+    margin: 10px;
+    left: 20px;
+    padding: 30px;
+    
 }
