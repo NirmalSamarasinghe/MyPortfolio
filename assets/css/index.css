@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+
+body {
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --background-color: #16171B;
+    --text-color: #ffffff;
+    --second-text-color: #11BBE9;
+    --third-text-color: #FEB700;
+}
+
+
+html {
+    font-size: 100%;
+}
+body {
+    /* background: var(--background-color);
+     color: var(--text-color);*/
+    background-color: #16171B;
+    color: #ffffff;
+}
+.header {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    padding: 1.5px 9%;
+    background: #16171B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo {
+    font-size: 2rem;
+    color: #11BBE9;
+    font-weight: 600;
+}
+#navBar a {
+    font-size: 1.3rem;
+    color:#ffffff;
+    font-weight: 500;
+    margin-left: 1rem;
+    transition: 0.3s;
+    text-decoration: none;
+}
+#navBar a:hover,
+#navBar a.active {
+    color: #11BBE9;
+}
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+

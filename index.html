@@ -9,8 +9,14 @@
     <meta name="author" content="IJSE-Institute of Software Engineering mr.Nirmal Samarasinghe">
 
     <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="assets/css/stylesheet.css">
-   </head>
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/project.css">
+    <link rel="stylesheet" href="assets/css/task.css">
+    <link rel="stylesheet" href="assets/css/gallery.css">
+    <link rel="stylesheet" href="assets/css/contact.css"></head>
 
 <body>
 <header class="header">
@@ -214,13 +220,18 @@
 
 <section id="task">
     <h3 id="taskName">Task</h3>
+
     <div id="taskContainer">
         <div class="taskBox">
-            <p>Assignment 01</p>
-            <button class="taskBtn" src="https://github.com/NirmalSamarasinghe">Github...!</button>
+            <div class="taskContent">
+                <div class="img">Assignment 01</div>
+                    <button type="button" class="github"> <i class="fa-brands fa-square-github" style="color: #252d3c;"></i> Github</button>
+            </div>
         </div>
-
     </div>
+    <div class="taskIcon">
+      </div>
+
 </section>
 
 <section id="gallery">
@@ -321,31 +332,28 @@
         </section>
     </div>
 </section>
-
-<h3 id="contact">Contact Me</h3>
-<img src="assets/images/icons8-email-96.png" width="58" alt="">
-<p>nipunnirmal67@gmail.com</p>
-<img src="assets/images/icons8-rotary-phone-64.png" width="58" alt="">
-<p>070-165 8984</p>
-<img src="assets/images/icons8-github-48.png" alt="">
-<img src="assets/images/icons8-linkedin-50.png" alt="">
-<img src="assets/images/icons8-whatsapp-48%20(1).png" alt="">
-<img src="assets/images/icons8-fb-50.png" alt="">
-<img src="assets/images/icons8-instagram-50.png" alt=""><br>
-<button type="button">Download CV</button>
-<br><br>
-<input placeholder="Full Name" type="text"><br><br>
-<input placeholder="E-mail" type="email"><br><br>
-<input placeholder="Your Message" type="text"><br><br>
-<button type="button">Submit</button>
+<section id="contact">
+    <h3 id="contactName">Contact Me</h3>
+    <img src="assets/images/icons8-email-96.png" width="58" alt="">
+    <p>nipunnirmal67@gmail.com</p>
+    <img src="assets/images/icons8-rotary-phone-64.png" width="58" alt="">
+    <p>070-165 8984</p>
+    <img src="assets/images/icons8-github-48.png" alt="">
+    <img src="assets/images/icons8-linkedin-50.png" alt="">
+    <img src="assets/images/icons8-whatsapp-48%20(1).png" alt="">
+    <img src="assets/images/icons8-fb-50.png" alt="">
+    <img src="assets/images/icons8-instagram-50.png" alt=""><br>
+    <button type="button">Download CV</button>
+    <br><br>
+    <input placeholder="Full Name" type="text"><br><br>
+    <input placeholder="E-mail" type="email"><br><br>
+    <input placeholder="Your Message" type="text"><br><br>
+    <button type="button">Submit</button>
+</section>
 
 <script>
-    function myFunction(){
-        var navBar = document.getElementById("navBar");
-        navBar.classList.toggle('show');
-    }
-</script>
 
+</script>
 
 </body>
 </html>

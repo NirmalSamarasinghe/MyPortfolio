@@ -1,0 +1,21 @@
+#taskContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+.taskBox{
+    position: relative;
+    border: 3px solid #EFB700;
+    border-radius: 3px;
+}
+.taskBox .taskContent{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+#taskContainer{
+
+}

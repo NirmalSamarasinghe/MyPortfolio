@@ -1,0 +1,88 @@
+.home {
+    display: flex;
+    align-items: center;
+    padding: 9%;
+}
+.home-content {
+    max-width: 40rem;
+}
+.home-content h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 0.9;
+}
+.home-content .text_animation {
+    position: relative;
+    font-weight: 1000;
+    color: transparent;
+    font-size: 35px;
+    -webkit-text-stroke: 1px #FEB700;
+    margin: 2rem;
+}
+.home-content p {
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+    font-size: 1.6rem;
+    margin: 1rem;
+}
+.btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 35rem;
+    height: 6rem;
+}
+.btn-box .btn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 126px;
+    height: 46px;
+    border: 2px solid #11BBE9;
+    border-radius: 8px;
+    font-size: 23px;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    color: #11BBE9;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.4s;
+}
+.btn-box .btn::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #11BBE9;
+    z-index: -1;
+    transition: 0.3s;
+}
+.btn-box .btn:nth-child(2) {
+    background: transparent;
+    color: #11BBE9;
+}
+.btn-box .btn:nth-child(2)::before {
+    background: #11BBE9;
+}
+.btn-box .btn:hover::before {
+    width: 100%;
+}
+.image {
+    position: absolute;
+    width: 900px;
+    top: 10px;
+    left: 550px;
+    display: flex;
+    justify-content: space-between;
+}
+.socialImages {
+    position: absolute;
+    right: 70px;
+    left: 100px;
+    top: 600px;
+    margin: 0;
+}
