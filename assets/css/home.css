@@ -86,3 +86,38 @@
     top: 600px;
     margin: 0;
 }
+
+/*.image img {
+    width: 100%; !* Make the image take up 100% of its container's width *!
+    height: auto; !* Maintain the aspect ratio *!
+}*/
+
+@media screen and (min-width: 321px) and (max-width: 375px){
+    .image {
+        flex-direction: row; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items on smaller screens */
+        left: 200px;
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 425px) {
+    .image {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: baseline; /* Center items on smaller screens */
+        right: 200px;
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    /* Adjust styles for screens between 426px and 768px if needed */
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Adjust styles for screens between 769px and 1024px if needed */
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    /* Adjust styles for screens between 1025px and 1440px if needed */
+}

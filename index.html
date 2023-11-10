@@ -16,18 +16,40 @@
     <link rel="stylesheet" href="assets/css/project.css">
     <link rel="stylesheet" href="assets/css/task.css">
     <link rel="stylesheet" href="assets/css/gallery.css">
-    <link rel="stylesheet" href="assets/css/contact.css"></head>
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+</head>
 
 <body>
 <header class="header">
     <a href="#home" class="logo">Nirmal.</a>
+    <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
     <nav id="navBar">
-        <a href="" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#project">Project</a>
-        <a href="#task">Task</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
+        <ul>
+            <li>
+                <a href="" class="active">Home</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#project">Project</a>
+            </li>
+            <li>
+                <a href="#task">Task</a>
+            </li>
+            <li>
+                <a href="#gallery">Gallery</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+
+        </ul>
     </nav>
 </header>
 
@@ -43,7 +65,7 @@
         <div class="btn-box">
             <a href="" class="btn">Hire Me</a>
         </div>
-        <img class="image" src="assets/images/MyPortfoliyohomepage-removebg-preview.png" width="500" alt="">
+<!--        <img class="image" src="assets/images/MyPortfoliyohomepage-removebg-preview.png" width="500" alt="">-->
     </div>
     <div class="socialImages">
         <img src="assets/images/icons8-github-48.png" alt="">
@@ -395,7 +417,18 @@
     </div>
 </section>
 
+<footer>
+    <p>Copyright &copy; 2023 by Nipun Nirmal || All Right Reserved.</p>
+    <a href="#home"><i class="fa-solid fa-arrow-up fa-bounce" style="color: #ffffff;"></i></a>
+</footer>
+
 <script>
+
+    hamburger= document.querySelector(".hamburger");
+    hamburger.onclick=function (){
+        navBar = document.querySelector("#navBar");
+        navBar.classList.toggle("active");
+    }
 
 </script>
 

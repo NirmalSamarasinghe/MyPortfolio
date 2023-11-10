@@ -1,0 +1,29 @@
+/*-----------------footer section---------------------*/
+
+footer{
+    background: #16171B;
+    padding: 1.5rem 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer p{
+    color: #ffffff;
+}
+
+footer a{
+    display: inline-flex;
+    justify-content: center;
+    color: #FEB700;
+    background: #11BBE9;
+    width: 30px;
+    /*aspect-ratio: 1/1;*/
+    padding: .6rem;
+    border-radius: 5px;
+}
+
+footer a i{
+    font-size: 1rem;
+    color: #ffffff;
+}

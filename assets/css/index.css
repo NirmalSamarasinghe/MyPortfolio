@@ -11,6 +11,8 @@ body {
     border: none;
     outline: none;
     scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -26,8 +28,6 @@ html {
     font-size: 100%;
 }
 body {
-    /* background: var(--background-color);
-     color: var(--text-color);*/
     background-color: #16171B;
     color: #ffffff;
 }
@@ -47,13 +47,27 @@ body {
     color: #11BBE9;
     font-weight: 600;
 }
-#navBar a {
+
+.hamburger{
+    display: none;
+}
+
+ul{
+    display: flex;
+}
+#navBar ul li a{
+    display: block;
+    color: #ffff;
+    padding: 10px ;
     font-size: 1.3rem;
-    color:#ffffff;
     font-weight: 500;
     margin-left: 1rem;
     transition: 0.3s;
     text-decoration: none;
+
+}
+#navBar{
+
 }
 #navBar a:hover,
 #navBar a.active {
@@ -63,4 +77,60 @@ section {
     min-height: 100vh;
     padding: 10rem 9% 2rem;
 }
+@media screen and (max-width: 1440px){
+    header{
+        padding: 0 50px;
+    }
+}
 
+@media screen and (max-width: 908px){
+    header{
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background: #11BBE9;
+        margin: 6px;
+    }
+
+    #navBar{
+        /*display: none;*/
+        height: 0;
+        position: relative;
+        top: 300px;
+        right: 100px;
+        width: 100vw;
+        background: #EFB700;
+        transition: 0.2s;
+        overflow: hidden;
+
+    }
+
+    #navBar .active{
+        height: 450px;
+    }
+
+    .navBar .active ul{
+        opacity: 1;
+    }
+
+    #navBar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+    }
+    #navBar ul li a{
+        margin-bottom: 12px;
+        color: darkred;
+    }
+}
