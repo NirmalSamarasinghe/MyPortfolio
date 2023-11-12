@@ -33,11 +33,11 @@ body {
 }
 .header {
     position: fixed;
+    display: flex;
     width: 100%;
     height: 60px;
     padding: 1.5px 9%;
     background: #16171B;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
@@ -48,89 +48,26 @@ body {
     font-weight: 600;
 }
 
-.hamburger{
-    display: none;
-}
-
-ul{
+.nav-bar{
     display: flex;
 }
-#navBar ul li a{
-    display: block;
-    color: #ffff;
-    padding: 10px ;
-    font-size: 1.3rem;
-    font-weight: 500;
-    margin-left: 1rem;
-    transition: 0.3s;
-    text-decoration: none;
-
-}
-#navBar{
-
-}
-#navBar a:hover,
-#navBar a.active {
+.nav-bar a{
     color: #11BBE9;
-}
-section {
-    min-height: 100vh;
-    padding: 10rem 9% 2rem;
-}
-@media screen and (max-width: 1440px){
-    header{
-        padding: 0 50px;
-    }
+    font-weight: 500;
+    padding: 10px 20px;
+
 }
 
-@media screen and (max-width: 908px){
-    header{
-        padding: 20px;
-    }
+.nav-bar a:hover{
+    color: #ffffff;
 }
+#menu{
+    font-size: 1.8rem;
+    z-index: 999;
+    cursor: pointer;
+    margin-left: 25px;
+    background: #11BBE9;
+    border-radius: 3px;
+    display: none;
 
-@media screen and (max-width: 768px){
-    .hamburger{
-        display: block;
-        cursor: pointer;
-    }
-    .hamburger .line{
-        width: 30px;
-        height: 3px;
-        background: #11BBE9;
-        margin: 6px;
-    }
-
-    #navBar{
-        /*display: none;*/
-        height: 0;
-        position: relative;
-        top: 300px;
-        right: 100px;
-        width: 100vw;
-        background: #EFB700;
-        transition: 0.2s;
-        overflow: hidden;
-
-    }
-
-    #navBar .active{
-        height: 450px;
-    }
-
-    .navBar .active ul{
-        opacity: 1;
-    }
-
-    #navBar ul{
-        display: block;
-        width: fit-content;
-        margin: 80px auto 0 auto;
-        text-align: center;
-        transition: 0.5s;
-    }
-    #navBar ul li a{
-        margin-bottom: 12px;
-        color: darkred;
-    }
 }

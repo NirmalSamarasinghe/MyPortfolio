@@ -1,0 +1,24 @@
+
+#skillName {
+    position: relative;
+    font-size: 65px;
+    margin-bottom: 2rem;
+    text-align: center;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 500px;
+}
+#icon {
+    position: relative;
+    align-content: space-between;
+    justify-content: center;
+    bottom: 450px;
+}
+#icon > img {
+    position: relative;
+    margin: 40px;
+    padding: 5px;
+}

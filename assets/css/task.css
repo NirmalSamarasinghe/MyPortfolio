@@ -10,7 +10,7 @@
     font-size: 65px;
     margin-bottom:2rem;
     text-align: center;
-    bottom: 100px;
+    bottom: 50px;
 }
 
 #Box{
@@ -34,8 +34,9 @@
     bottom: 75px;
     justify-content: center;
 }
-.name{
+.name >a >p{
     font-size: 30px;
+    color: white;
 }
 
 .cta {

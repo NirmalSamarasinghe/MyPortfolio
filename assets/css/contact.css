@@ -35,7 +35,6 @@
 
 input, textarea {
     width: 100%;
-    /*max-width: 490px; !* Maintain a maximum width for larger screens *!*/
     padding: 10px;
     border: none;
     border-radius: 20px;

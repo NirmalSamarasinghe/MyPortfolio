@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/css/home.css">
     <link rel="stylesheet" href="assets/css/about.css">
     <link rel="stylesheet" href="assets/css/project.css">
+    <link rel="stylesheet" href="assets/css/skill.css">
     <link rel="stylesheet" href="assets/css/task.css">
     <link rel="stylesheet" href="assets/css/gallery.css">
     <link rel="stylesheet" href="assets/css/contact.css">
@@ -23,57 +24,55 @@
 <body>
 <header class="header">
     <a href="#home" class="logo">Nirmal.</a>
-    <div class="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-    </div>
-    <nav id="navBar">
-        <ul>
-            <li>
-                <a href="" class="active">Home</a>
-            </li>
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#project">Project</a>
-            </li>
-            <li>
-                <a href="#task">Task</a>
-            </li>
-            <li>
-                <a href="#gallery">Gallery</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-
+        <ul class="nav-bar">
+            <li><a href="" class="active">Home</a></li>
+            <li><a href="#about">About</a> </li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#skill">Skill</a></li>
+            <li><a href="#task">Task</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-    </nav>
+    <div id="menu"><i class="fa-sharp fa-regular fa-bars" style="color: #ffffff;"></i></div>
 </header>
 
 <section id="home">
     <div class="home-content">
         <h1 data-aos="fade-up" data-aos-anchor-placement="top-bottom">Hello, I’m <span>Nipun Nirmal</span></h1>
-        <div class="text_animation" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-            <h3>FULL STACK ENGINEER</h3>
+        <div class="change-text">
+            <h3>
+    <!--            <div class="text_animation" data-aos="fade-up" data-aos-anchor-placement="top-bottom">-->
+                <span class="word">FULL STACK ENGINEER</span>
+            </h3>
         </div>
         <p>
             A versatile engineer proficient in both front-end & back-end development, creating comprehensive solutions for seamless user experiences.
         </p>
-        <div class="btn-box">
-            <a href="" class="btn">Hire Me</a>
+    </div>
+    <div class="home-img">
+        <div class="home-img-box">
+             <img class="image" src="assets/images/MyPortfoliyohomepage-removebg-preview.png" width="" alt="">
         </div>
-<!--        <img class="image" src="assets/images/MyPortfoliyohomepage-removebg-preview.png" width="500" alt="">-->
     </div>
-    <div class="socialImages">
-        <img src="assets/images/icons8-github-48.png" alt="">
-        <img src="assets/images/icons8-linkedin-50.png" alt="">
-        <img src="assets/images/icons8-whatsapp-48%20(1).png" alt="">
-        <img src="assets/images/icons8-fb-50.png" alt="">
-        <img src="assets/images/icons8-instagram-50.png" alt="">
-    </div>
+     <div class="btn-box">
+<!--        <a href="" class="btn">Hire Me</a>-->
+         <button class="animated-button">
+             <div>Hire me</div>
+             <div><a href="#contact"></a>
+             </div>
+         </button>
+
+     </div>
+      <div class="socialImages">
+          <a href="https://github.com/NirmalSamarasinghe"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/nipun-nirmal-89529a24a/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/Nipun.Nirmal.Samrasinghe/"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="https://www.instagram.com/nipun.nirmal.samrasinghe/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://twitter.com/nipunnirmal67"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://medium.com/@nipunnirmal"><i class="fa-brands fa-medium"></i></a>
+      </div>
+
+
 </section>
 
 <section id="about" class="about">
@@ -129,23 +128,7 @@
     </div>
 </section>
 
-<section id="skill">
-    <h2 id="skillName">Skill  & <span>Language</span></h2>
-    <div id="icon">
-        <img src="assets/images/icons8-java.gif" width="100" alt="">
-        <img src="assets/images/mysql.png"  width="100" alt="">
-        <img src="assets/images/html-5.png" width="100" alt="">
-        <img src="assets/images/css-3.png" width="100" alt="">
-        <img src="assets/images/icons8-javascript.gif" width="100" alt="">
-        <img src="assets/images/icons8-intellij-idea-144.png" width="100" alt=""><br>
-        <img src="assets/images/photoshop-lightroom.png" width="100" alt="">
-        <img src="assets/images/photoshop.png" width="100" alt="">
-        <img src="assets/images/1200px-Apache_NetBeans_Logo.svg.png" width="100" alt="">
-        <img src="assets/images/figma.png" width="100" alt="">
-        <img src="assets/images/scene.png" width="100" alt="">
-        <img src="assets/images/GitHub-Mark.png" width="100" alt=""><br>
-    </div>
-</section>
+
 
 <section id="experiences">
     <h2 id="expName">Experiences</h2>
@@ -185,6 +168,25 @@
     </div>
 </section>
 -->
+
+<section id="skill">
+    <h2 id="skillName">Skill  & <span>Language</span></h2>
+    <div id="icon">
+        <img src="assets/images/icons8-java.gif" width="100" alt="">
+        <img src="assets/images/mysql.png"  width="100" alt="">
+        <img src="assets/images/html-5.png" width="100" alt="">
+        <img src="assets/images/css-3.png" width="100" alt="">
+        <img src="assets/images/icons8-javascript.gif" width="100" alt="">
+        <img src="assets/images/icons8-intellij-idea-144.png" width="100" alt=""><br>
+        <img src="assets/images/photoshop-lightroom.png" width="100" alt="">
+        <img src="assets/images/photoshop.png" width="100" alt="">
+        <img src="assets/images/1200px-Apache_NetBeans_Logo.svg.png" width="100" alt="">
+        <img src="assets/images/figma.png" width="100" alt="">
+        <img src="assets/images/scene.png" width="100" alt="">
+        <img src="assets/images/GitHub-Mark.png" width="100" alt=""><br>
+    </div>
+</section>
+
 <section id="project">
     <h3 id="projectName"><span>My</span>Work</h3>
     <div class="blog-card">
@@ -218,7 +220,7 @@
                 This project is a MVC architecture implementation for managing coffee shop information in a Java
                 application</p>
             <p class="read-more">
-                <a href="#">Read More</a>
+                <a href="#https://github.com/NirmalSamarasinghe/Final-Semester-Project-2023-04-28">Read More</a>
             </p>
         </div>
     </div>
@@ -230,11 +232,10 @@
             </div>
         </div>
         <div class="description">
-            <h1>London Coffee Shop Management System (Layered Architecture)</h1>
+            <h1># Connect-4-Game</h1>
             <h2>Opening a door to the future</h2>
-            <p>This project is a layered architecture implementation for managing coffee shop information in a Java
-                application<p class="read-more">
-                <a href="#">Read More</a>
+            <p>OOP final course work<p class="read-more">
+                <a href="#https://github.com/NirmalSamarasinghe/Connect-4-Game">Read More</a>
             </p>
         </div>
     </div>
@@ -244,7 +245,7 @@
     <h3 id="taskName">Task</h3>
     <div id="Box">
         <div class="taskBox">
-            <div class="name"><p>Assignment 01</p></div>
+            <div class="name"><a href=""><p>Assignment 01</p></a></div>
             <button class="cta">
                 <span>Github</span>
                 <svg viewBox="0 0 13 10" height="10px" width="15px">
@@ -255,7 +256,7 @@
         </div>
 
         <div class="taskBox">
-            <div class="name"><p>Assignment 02</p></div>
+            <div class="name"><a href=""><p class="">Assignment 02</p></a></div>
             <button class="cta">
                 <span>Github</span>
                 <svg viewBox="0 0 13 10" height="10px" width="15px">
@@ -266,7 +267,7 @@
         </div>
 
         <div class="taskBox">
-            <div class="name"><p>Assignment 03</p></div>
+            <div class="name"><a href="assignment03.html"><p class="">Assignment 03</p></a></div>
             <button class="cta">
                 <span>Github</span>
                 <svg viewBox="0 0 13 10" height="10px" width="15px">
@@ -277,7 +278,7 @@
         </div>
 
         <div class="taskBox">
-            <div class="name"><p>Assignment 04</p></div>
+            <div class="name"><a href="assignment04.html"><p class="">Assignment 04</p></a></div>
             <button class="cta">
                 <span>Github</span>
                 <svg viewBox="0 0 13 10" height="10px" width="15px">
@@ -288,7 +289,7 @@
         </div>
 
         <div class="taskBox">
-            <div class="name"><p>Assignment 05</p></div>
+            <div class="name"><a href="assignment05.html"><p class="">Assignment 05</p></a></div>
             <button class="cta">
                 <span>Github</span>
                 <svg viewBox="0 0 13 10" height="10px" width="15px">
@@ -299,7 +300,7 @@
         </div>
 
         <div class="taskBox">
-            <div class="name"><p>Assignment 06</p></div>
+            <div class="name"><a href="assignment06.html"><p class="">Assignment 06</p></a></div>
             <button class="cta">
                 <span>Github</span>
                 <svg viewBox="0 0 13 10" height="10px" width="15px">
@@ -310,7 +311,7 @@
         </div>
 
         <div class="taskBox">
-            <div class="name"><p>Assignment 07</p></div>
+            <div class="name"><a href="assignment07.html"><p class="">Assignment 07</p></a></div>
             <button class="cta">
                 <span>Github</span>
                 <svg viewBox="0 0 13 10" height="10px" width="15px">
@@ -321,7 +322,7 @@
         </div>
 
         <div class="taskBox">
-            <div class="name"><p>Assignment 08</p></div>
+            <div class="name"><a href="assignment08.html"><p class="">Assignment 08</p></a></div>
             <button class="cta">
                 <span>Github</span>
                 <svg viewBox="0 0 13 10" height="10px" width="15px">
@@ -332,7 +333,7 @@
         </div>
 
         <div class="taskBox">
-            <div class="name"><p>Assignment 09</p></div>
+            <div class="name"><a href="assignment09.html"><p class="">Assignment 09</p></a></div>
             <button class="cta">
                 <span>Github</span>
                 <svg viewBox="0 0 13 10" height="10px" width="15px">
@@ -343,7 +344,7 @@
         </div>
 
         <div class="taskBox">
-            <div class="name"><p>Assignment 10</p></div>
+            <div class="name"><a href=""><p class="">Assignment 10</p></a></div>
             <button class="cta">
                 <span>Github</span>
                 <svg viewBox="0 0 13 10" height="10px" width="15px">
@@ -354,7 +355,7 @@
         </div>
 
         <div class="taskBox">
-            <div class="name"><p>Assignment 11</p></div>
+            <div class="name"><a href="assignment11.html"><p class="">Assignment 11</p></a></div>
             <button class="cta">
                 <span>Github</span>
                 <svg viewBox="0 0 13 10" height="10px" width="15px">
@@ -365,7 +366,7 @@
         </div>
 
         <div class="taskBox">
-            <div class="name"><p>Assignment 12</p></div>
+            <div class="name"><a href=""><p class="">Assignment 12</p></a></div>
             <button class="cta">
                 <span>Github</span>
                 <svg viewBox="0 0 13 10" height="10px" width="15px">
@@ -423,14 +424,47 @@
 </footer>
 
 <script>
+    let words = document.querySelectorAll(".word");
+    words.forEach((word)=>{
+        let letters = words.textContent.split("");
+        word.textContent="";
+        letters.forEach((letter)=>{
+            let span= document.createElement("span");
+            span.textContent = letter;
+            span.className ="letter";
+            word.append(span);
+        });
+    });
 
-    hamburger= document.querySelector(".hamburger");
-    hamburger.onclick=function (){
-        navBar = document.querySelector("#navBar");
-        navBar.classList.toggle("active");
-    }
+    let currentWordIndex=0;
+    let maxWordIndex=words.length-1;
+    words[currentWordIndex].style.opacity="1";
+
+    let changeText=()=>{
+         let currentWord = words[currentWordIndex];
+         let nextWord= currentWordIndex=== maxWordIndex ? words[0]: words[currentWordIndex + 1];
+
+         Array.from(currentWord.children).forEach((letter,i)=>{
+             setTimeout(()=>{
+                 letter.className="letter out";
+
+             },i*80);
+         })
+        nextWord.style.opacity="1";
+         Array.from(nextWord.children).forEach((letter,i)=>{
+             letter.className="letter behind";
+             setTimeout(()=>{
+                 letter.className="letter in";
+
+             },340 + i + 80);
+         })
+        currentWordIndex = currentWordIndex===maxWordIndex?0:currentWordIndex + 1;
+    };
+    changeText();
+    setInterval(changeText,3000);
 
 </script>
 
 </body>
 </html>
+

@@ -10,7 +10,7 @@
     font-size: 65px;
     margin-bottom: 2rem;
     text-align: center;
-    bottom: 90px;
+    bottom: 20px;
 }
 span {
     position: relative;
@@ -25,7 +25,7 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
-    bottom: 70px;
+    bottom: 10px;
 }
 .aboutImage img {
     width: 85%;
@@ -48,7 +48,7 @@ span {
 .about_Content {
     text-align: center;
     position: relative;
-    bottom: 50px;
+    bottom: 25px;
 }
 .about_Content > h3 {
     font-size: 30px;
