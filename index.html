@@ -23,17 +23,25 @@
 
 <body>
 <header class="header">
-    <a href="#home" class="logo">Nirmal.</a>
-        <ul class="nav-bar">
-            <li><a href="" class="active">Home</a></li>
-            <li><a href="#about">About</a> </li>
-            <li><a href="#project">Project</a></li>
+    <nav class="nav">
+        <input id="nav-toggle" type="checkbox">
+        <div class="logo"><strong>Nirmal.</strong></div>
+        <ul class="links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#skill">Skill</a></li>
+            <li><a href="#project">Project</a></li>
             <li><a href="#task">Task</a></li>
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-    <div id="menu"><i class="fa-sharp fa-regular fa-bars" style="color: #ffffff;"></i></div>
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav>
+
 </header>
 
 <section id="home">
